@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/quiz-form.css">
+    <title>GALAXY QUIZ</title>
+</head>
+<body>
+
+
+<form name="galaxyForm" id="quiz" > <!--onsubmit="return verificarRespuestas()"-->
+
+<!---CONTADOR-->
+
+<!-- <div>
+    <p id= "count-down" class="countdown">10</p>
+</div> -->
+
+
+
+
+<!--PRIMERA PREGUNTA-->
+
+<div class="caja-pregunta" name="divpreguntas">
+
+
+    <div class="enunciado">
+
+        <h3 class="pregunta" id="firsquest">CONSTELACIÓN DE LA CUAL FORMA PARTE EL PLANETA KRYPTON</h3>
+        
+    </div>
+
+    <div class="posibilidades">
+
+            <label name="label1" for="corvus-field" class="opcion" id="corvus">Corvus</label>
+            <input id="corvus-field" type="radio" name="p1" value="corvus" >  
+
+
+            <label for="cosmos-field" class="opcion">Altius</label>
+            <input id="cosmos-field" type="radio" name="p1" value="altius">
+  
+
+            <label for="uranus-field" class="opcion">Kandor </label>
+            <input id="uranus-field" type="radio" name="p1" value="kandor">
+    
+   
+            <label for="nix-field" class="opcion">Rao </label>
+            <input id="nix-field" type="radio" name="p1" value="rao">
+       
+
+    </div>  
+  
+
+</div>
+
+<!--SEGUNDA PREGUNTA-->
+
+<div class="caja-pregunta">
+
+        <div class="enunciado">
+
+            <h3 class="pregunta">NOMBRE DEL CARGUERO ESPACIAL DE ALIEN, EL OCTAVO PASAJERO</h3>
+
+        </div>
+
+       <div class="posibilidades">
+
+    
+                <label for="arcadia-field" class="opcion">Arcadia </label>
+                <input id="arcadia-field" type="radio" name="p2" value="arcadia">
+               
+         
+
+                <label for="nautilus-field" class="opcion">Nautilus</label>
+                <input id="nautilus-field" type="radio" name="p2" value="nautilus">
+                
+       
+        
+                <label for="leviatan-field" class="opcion">Leviatán </label>
+                <input id="leviatan-field" type="radio" name="p2" value="leviatan">
+               
+           
+
+                <label for="nostromo-field" class="opcion">Nostromo</label>
+                <input id="nostromo-field" type="radio" name="p2" value="nostromo">
+               
+      </div>
+
+
+  </div>
+
+<!--TERCERA PREGUNTA-->
+
+<div class="caja-pregunta">
+
+        <div class="enunciado">
+            <h3 class="pregunta">LUNA DEL PLANETA POLIFEMO, HABITAT DE LOS NA'VI</h3>
+        </div>
+
+        <div class="posibilidades">
+
+         
+                <label for="eywa-field" class="opcion" id="pulsar-btn">Eywa</label>
+                <input id="eywa-field" type="radio" name="p3" value="eywa">
+                
+                <label for="pandora-field" class="opcion">Pandora</label>
+                <input id="pandora-field" type="radio" name="p3" value="pandora">
+         
+                <label for="centauri-field" class="opcion">Centauri </label>
+                <input id="centauri-field" type="radio" name="p3" value="centauri">
+               
+                <label for="aleluya-field" class="opcion">Aleluya </label>
+                <input id="aleluya-field" type="radio" name="p3" value="aleluya">
+       
+
+        </div>
+
+  </div>
+
+  <!--CUARTA PREGUNTA-->
+
+<div class="caja-pregunta">
+
+
+        <div class="enunciado">
+            <h3 class="pregunta">CONSTELACIÓN DE LA CUAL FORMA PARTE LA ESTRELLA ALDEBARÁN</h3>
+        </div>
+
+
+        <div class="posibilidades">
+
+          
+                <label for="tauro-field" class="opcion">Tauro </label>
+                <input id="tauro-field" type="radio" name="p4" value="tauro">
+            
+                <label for="piscis-field" class="opcion">Piscis  </label>
+                <input id="piscis-field" type="radio" name="p4" value="piscis">
+          
+                <label for="escorpio-field" class="opcion">Escorpio </label>
+                <input id="escorpio-field" type="radio" name="p4" value="escorpio">
+          
+                <label for="acuario-field" class="opcion">Acuario  </label>
+                <input id="acuario-field" type="radio" name="p4" value="acuario">
+              
+          
+
+        </div>
+
+  </div>
+
+
+  <!--QUINTA PREGUNTA-->
+
+  <div class="caja-pregunta">
+
+        <div class="enunciado">
+            <h3 class="pregunta">NOMBRE DE PILA DE STAR-LORD</h3>
+        </div>
+
+        <div class="posibilidades">
+
+          
+                <label for="reed-field" class="opcion">Reed Richards </label>
+                <input id="reed-field" type="radio" name="p5" value="reed">
+               
+          
+                <label for="norrin-field" class="opcion">Norrin Radd  </label>
+                <input id="norrin-field" type="radio" name="p5" value="norrin">
+              
+        
+                <label for="parker-field" class="opcion">Peter Parker   </label>
+                <input id="parker-field" type="radio" name="p5" value="parker">
+             
+       
+                <label for="quill-field" class="opcion">Peter Quill    </label>
+                <input id="quill-field" type="radio" name="p5" value="quill">
+            
+         
+
+        </div>
+
+    </div>
+
+  <input class="boton-submit" type="button" onclick="comprobar()" value="Analizar">ANALIZAR</button>
+  
+</form>
+<div id="resultado-aprobado"></div>
+<div id="resultado-suspendido"></div>
+
+
+
+
+
+<script src="galaxyForm.js"></script>
+</body>
+</html>
